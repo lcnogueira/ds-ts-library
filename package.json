@@ -8,7 +8,8 @@
     "url": "git+https://github.com/lcnogueira/ds-ts-library.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
   },
   "bugs": {
     "url": "https://github.com/lcnogueira/ds-ts-library/issues"
@@ -20,5 +21,9 @@
     "typescript"
   ],
   "author": "Luiz Cláudio <luizcns18@gmail.com> (https://lcnogueira.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
 }
