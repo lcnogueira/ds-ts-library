@@ -1,0 +1,24 @@
+{
+  "name": "ds-ts-library",
+  "version": "1.0.0",
+  "description": "A Data Structure and Algorithms library",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcnogueira/ds-ts-library.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lcnogueira/ds-ts-library/issues"
+  },
+  "homepage": "https://github.com/lcnogueira/ds-ts-library",
+  "keywords": [
+    "structure",
+    "algorithm",
+    "typescript"
+  ],
+  "author": "Luiz Cláudio <luizcns18@gmail.com> (https://lcnogueira.com/)",
+  "license": "MIT"
+}
