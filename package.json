@@ -10,7 +10,18 @@
   "scripts": {
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
-    "lint": "eslint '*/**/*.{js,ts}' --fix"
+    "lint:fix": "eslint '*/**/*.{js,ts}' --fix",
+    "lint:travis": "eslint '*/**/*.{js,ts}' --max-warnings 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --max-warnings 0"
+    ]
   },
   "bugs": {
     "url": "https://github.com/lcnogueira/ds-ts-library/issues"
@@ -30,6 +41,8 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5"
