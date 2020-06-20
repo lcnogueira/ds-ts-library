@@ -1,9 +1,9 @@
-import { Stack } from "..";
+import { Stack } from '..';
 
-export function decimalToBinary(decNumber: number) {
+export function decimalToBinary(decNumber: number): string {
   const remStack = new Stack();
   let rem: number;
-  let binaryString = "";
+  let binaryString = '';
 
   while (decNumber > 0) {
     rem = Math.floor(decNumber % 2);
@@ -12,20 +12,20 @@ export function decimalToBinary(decNumber: number) {
   }
 
   while (!remStack.isEmpty()) {
-    binaryString += remStack.pop().toString();
+    binaryString += remStack.pop()?.toString();
   }
 
   return binaryString;
 }
 
-export function baseConverter(decNumber: number, base: number) {
+export function baseConverter(decNumber: number, base: number): string {
   const remStack = new Stack();
-  const digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   let rem: number;
-  let baseString = "";
+  let baseString = '';
 
   if (!(base >= 2 && base <= 36)) {
-    return "";
+    return '';
   }
 
   while (decNumber > 0) {
@@ -40,5 +40,3 @@ export function baseConverter(decNumber: number, base: number) {
 
   return baseString;
 }
-
-console.log(decimalToBinary(1500)); //10111011100
