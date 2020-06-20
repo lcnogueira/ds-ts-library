@@ -12,7 +12,9 @@
     "tsc:watch": "tsc --watch",
     "lint:fix": "eslint '*/**/*.{js,ts}' --fix",
     "lint:travis": "eslint '*/**/*.{js,ts}' --max-warnings 0",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --watchAll --coverage"
   },
   "husky": {
     "hooks": {
