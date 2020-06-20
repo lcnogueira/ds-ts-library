@@ -1,5 +1,9 @@
 import { Stack } from '..';
 
+/**
+ * Convert a decimal number to binary
+ * @param decNumber decimal number
+ */
 export function decimalToBinary(decNumber: number): string {
   const remStack = new Stack();
   let rem: number;
@@ -18,6 +22,11 @@ export function decimalToBinary(decNumber: number): string {
   return binaryString;
 }
 
+/**
+ * Convert a decimal number to any provided base (up to 36)
+ * @param decNumber decimal number
+ * @param base base to convert to (up to 36)
+ */
 export function baseConverter(decNumber: number, base: number): string {
   const remStack = new Stack();
   const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
