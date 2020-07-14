@@ -1,4 +1,8 @@
 language: node_js
+
+branches:
+  only:
+    - master
  
 node_js:
   - stable
@@ -7,4 +11,5 @@ install:
   - npm install
  
 script:
+  - npm run lint:travis
   - npm test
