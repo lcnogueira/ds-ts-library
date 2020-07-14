@@ -16,4 +16,5 @@ install:
  
 script:
   - npm run lint:travis
+  - npm test
   - npm run coveralls
