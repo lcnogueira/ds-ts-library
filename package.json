@@ -14,7 +14,8 @@
     "lint:travis": "eslint '*/**/*.{js,ts}' --max-warnings 0",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "test:coverage": "jest --watchAll --coverage"
+    "test:coverage": "jest --coverage",
+    "coveralls": "npm run test:coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "husky": {
     "hooks": {

@@ -3,6 +3,10 @@ language: node_js
 branches:
   only:
     - master
+
+cache:
+  directories:
+    - node_modules
  
 node_js:
   - stable
@@ -12,4 +16,4 @@ install:
  
 script:
   - npm run lint:travis
-  - npm test
+  - npm run coveralls
