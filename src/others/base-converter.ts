@@ -16,7 +16,7 @@ export function decimalToBinary(decNumber: number): string {
   }
 
   while (!remStack.isEmpty()) {
-    binaryString += remStack.pop()?.toString();
+    binaryString += remStack.pop().toString();
   }
 
   return binaryString;
