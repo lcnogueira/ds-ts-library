@@ -6,6 +6,11 @@ A TypeScript library that provides Data Structures and Algorithms.
 
 ## How to use this library
 
+### Develop mode
+```js
+npm run dev -- -- <filepath>
+```
+
 ## Contributing to the project
 
 If you want to contribute to the project, please, read the following sections.

@@ -8,6 +8,7 @@
     "url": "git+https://github.com/lcnogueira/ds-ts-library.git"
   },
   "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "lint:fix": "eslint '*/**/*.{js,ts}' --fix",
@@ -50,9 +51,9 @@
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lint-staged": "^10.2.11",
-    "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.0",
+    "ts-node-dev": "^1.0.0-pre.56",
     "typescript": "^3.9.5"
   }
 }
